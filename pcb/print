@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pcb -x ps --psfile lt3973-break.ps lt3973-break.pcb
+ps2pdf lt3973-break.ps
+rm lt3973-break.ps
+acroread lt3973-break.pdf

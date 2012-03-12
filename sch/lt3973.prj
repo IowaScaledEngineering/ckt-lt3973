@@ -1,0 +1,4 @@
+schematics lt3973.sch
+output-name ../pcb/lt3973
+skip-m4
+elements-dir ../fp
