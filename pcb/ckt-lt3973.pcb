@@ -1,5 +1,5 @@
 # release: pcb 20100929
-# date:    Fri Mar 23 21:30:06 2012
+# date:    Sat Mar 24 20:56:32 2012
 # user:    railfan (Michael Petersen,,,)
 # host:    sylvanite
 
@@ -926,7 +926,7 @@ Layer(1 "component")
 	Line[38530 35530 33000 30000 1000 2000 "clearline"]
 	Line[22000 8000 22000 15500 4000 2000 "clearline"]
 	Line[21957 24414 22043 24500 2000 2000 "clearline"]
-	Line[65500 32500 68500 29500 1000 2000 "clearline"]
+	Line[65500 32500 71000 27000 3000 2000 "clearline"]
 	Line[22000 28500 22000 24543 1000 2000 "clearline"]
 	Line[23500 30000 22000 28500 1000 2000 "clearline"]
 	Line[64000 37500 65500 36000 1000 2000 "clearline"]
@@ -942,10 +942,9 @@ Layer(1 "component")
 	Line[40562 33562 38500 31500 1000 2000 "clearline"]
 	Line[44754 33562 40562 33562 1000 2000 "clearline"]
 	Line[44754 35530 38530 35530 1000 2000 "clearline"]
-	Line[65500 36000 65500 32500 1000 2000 "clearline"]
+	Line[65500 36000 65500 32500 2000 2000 "clearline"]
 	Line[22000 24543 22043 24500 1000 2000 "clearline"]
 	Line[62500 24543 62543 24500 1000 2000 "clearline"]
-	Line[68500 29500 68500 17000 2000 2000 "clearline"]
 	Line[38457 24500 29129 24500 2000 2000 "clearline"]
 	Polygon("")
 	(
@@ -1019,12 +1018,24 @@ Layer(1 "component")
 	(
 		[16000 32500] [25000 32500] [25000 54000] [16000 54000] 
 	)
+	Polygon("")
+	(
+		[68500 18000] [111500 18000] [111500 30000] [68500 30000] 
+	)
 )
 Layer(2 "solder")
 (
 	Polygon("clearpoly")
 	(
 		[2000 54000] [111500 54000] [111500 2000] [2000 2000] 
+	)
+	Polygon("")
+	(
+		[40000 23500] [56000 23500] [56000 8500] [40000 8500] 
+	)
+	Polygon("")
+	(
+		[61500 53000] [35000 53000] [35000 44000] [61500 44000] 
 	)
 )
 Layer(3 "silk")
@@ -1036,7 +1047,9 @@ Layer(3 "silk")
 	Text[18000 31500 0 122 "GND" "clearline,auto"]
 	Text[18000 41500 0 122 "IN" "clearline,auto"]
 	Text[18000 21500 0 122 "OUT" "clearline,auto"]
-	Text[105500 44500 3 177 "LT3973" "clearline,auto"]
+	Text[125500 44500 3 177 "LT3973" "clearline,auto"]
+	Text[39500 36000 0 100 "Iowa Scaled Engineering" "clearline,auto"]
+	Text[48500 26500 0 100 "http://iascaled.com" "clearline,auto"]
 )
 Layer(4 "silk")
 (
