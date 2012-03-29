@@ -39,7 +39,7 @@ value=4.7uF
 T 45300 46600 5 10 1 1 0 0 1
 footprint=1206
 T 45300 46800 5 10 1 1 0 0 1
-comment=50V, X7R/X5R
+comment=50V
 }
 C 49300 48700 1 270 0 capacitor-1.sym
 {
@@ -51,7 +51,7 @@ T 50200 48500 5 10 0 0 270 0 1
 symversion=0.1
 T 49600 47900 5 10 1 1 0 0 1
 value=0.47uF
-T 49600 48600 5 10 1 1 0 0 1
+T 49600 48600 5 10 0 1 0 0 1
 footprint=0805
 T 49800 48100 5 10 1 1 0 0 1
 comment=25V
@@ -81,10 +81,10 @@ T 55100 45800 5 10 0 0 270 0 1
 symversion=0.1
 T 54500 45200 5 10 1 1 0 0 1
 value=22uF
-T 54500 44800 5 10 1 1 0 0 1
+T 54500 44800 5 10 0 1 0 0 1
 footprint=0805
 T 54500 45000 5 10 1 1 0 0 1
-comment=16V, X7R/X5R
+comment=16V
 }
 N 54400 45100 54400 44700 4
 N 47600 44700 47600 45600 4
@@ -148,8 +148,10 @@ T 54000 47300 5 10 0 0 270 0 1
 symversion=0.1
 T 53400 46700 5 10 1 1 0 0 1
 value=15pF
-T 53400 46500 5 10 1 1 0 0 1
+T 53400 46500 5 10 0 1 0 0 1
 footprint=0805
+T 53400 46500 5 10 1 1 0 0 1
+description=16V, NP0
 }
 N 52500 47500 52500 47700 4
 N 52500 46600 52500 46000 4
@@ -178,10 +180,12 @@ N 53300 47700 55400 47700 4
 T 54700 47700 5 10 1 1 0 0 1
 netname=VOUT
 }
-T 44000 43500 9 10 1 0 0 2 6
+T 44000 43500 9 10 1 0 0 2 8
 Notes:
-1) Component values for 3.3V, 600kHz output. (See LT3973 datasheet for other apps)
-2) C2 voltage rating from LT3973 Abs Max
-3) Adjust C3 voltage rating if output set >12V
-4) The final application should include an aluminum electrolytic capacitor at the input.  See Linear App Note 88.
+1) All capacitors are ceramic (X7R/X5R) unless otherwise noted.
+2) All capacitors and resistors are 0805 unless otherwise noted.
+3) Component values for 3.3V, 600kHz output. (See LT3973 datasheet for other apps)
+4) C2 voltage rating from LT3973 Abs Max
+5) Adjust C3 voltage rating if output set >12V
+6) The final application should include an aluminum electrolytic capacitor at the input.  See Linear App Note 88.
 
