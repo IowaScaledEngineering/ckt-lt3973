@@ -1,6 +1,9 @@
 #!/bin/bash
 
-pcb -x ps --psfile lt3973-break.ps lt3973-break.pcb
-ps2pdf lt3973-break.ps
-rm lt3973-break.ps
-acroread lt3973-break.pdf
+PCB=ckt-lt3973
+
+pcb -x ps --psfile $PCB.ps $PCB.pcb
+ps2pdf $PCB.ps
+rm $PCB.ps
+mv $PCB.pdf $PCB-pcb.pdf
+acroread $PCB-pcb.pdf
