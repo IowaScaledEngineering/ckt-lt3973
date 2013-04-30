@@ -1,6 +1,6 @@
 v 20110115 2
 T 50000 40900 9 10 1 0 0 0 1
-LT3973 Regulator Macro
+LT3973 Regulator
 T 49800 40600 9 10 1 0 0 0 1
 lt3973.sch
 T 50000 40300 9 10 1 0 0 0 1
@@ -9,8 +9,6 @@ T 51500 40300 9 10 1 0 0 0 1
 1
 T 53800 40300 9 10 1 0 0 0 1
 Michael Petersen
-T 53800 40600 9 10 1 0 0 0 1
-$Revision$
 C 50400 47600 1 0 0 inductor-1.sym
 {
 T 50600 48100 5 10 0 0 0 0 1
@@ -83,8 +81,6 @@ T 54500 45200 5 10 1 1 0 0 1
 value=22uF
 T 54500 44800 5 10 0 1 0 0 1
 footprint=0805
-T 54500 45000 5 10 1 1 0 0 1
-comment=16V
 }
 N 54400 45100 54400 44700 4
 N 47600 44700 47600 45600 4
@@ -119,11 +115,9 @@ device=RESISTOR
 T 52300 46800 5 10 1 1 90 0 1
 refdes=R2
 T 52800 46800 5 10 1 1 90 0 1
-value=1Meg
+value=0
 T 52600 46600 5 10 0 0 90 0 1
 footprint=0805
-T 52600 46500 5 10 1 1 0 0 1
-description=1%
 }
 C 52600 45100 1 90 0 resistor-1.sym
 {
@@ -132,11 +126,9 @@ device=RESISTOR
 T 52300 45300 5 10 1 1 90 0 1
 refdes=R3
 T 52800 45300 5 10 1 1 90 0 1
-value=576k
+value=DNI
 T 52600 45100 5 10 0 0 90 0 1
 footprint=0805
-T 52600 45000 5 10 1 1 0 0 1
-description=1%
 }
 C 53100 47500 1 270 0 capacitor-1.sym
 {
@@ -147,11 +139,9 @@ refdes=C4
 T 54000 47300 5 10 0 0 270 0 1
 symversion=0.1
 T 53400 46700 5 10 1 1 0 0 1
-value=15pF
+value=DNI
 T 53400 46500 5 10 0 1 0 0 1
 footprint=0805
-T 53400 46500 5 10 1 1 0 0 1
-description=16V, NP0
 }
 N 52500 47500 52500 47700 4
 N 52500 46600 52500 46000 4
@@ -184,9 +174,9 @@ T 44000 43500 9 10 1 0 0 2 8
 Notes:
 1) All capacitors are ceramic (X7R/X5R) unless otherwise noted.
 2) All capacitors and resistors are 0805 unless otherwise noted.
-3) Component values for 3.3V, 600kHz output. (See LT3973 datasheet for other apps)
+3) Component values for 600kHz, fixed output (3.3V or 5.0V) version. (See LT3973 datasheet for other apps)
 4) C2 voltage rating from LT3973 Abs Max
-5) Adjust C3 voltage rating if output set >12V
+5) Adjust C3 voltage rating based on VOUT
 6) The final application should include an aluminum electrolytic capacitor at the input.  See Linear App Note 88.
 
 C 43000 47300 1 0 1 header3-1.sym
